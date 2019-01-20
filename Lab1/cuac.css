@@ -1,23 +1,39 @@
 /* General */
 
-.filler {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: -1;
-}
-
-.full-size { 
-	width: 100%;
+html, body {
+	margin: 0;
+	font-family: helvetica;
 	height: 100%;
 }
 
+body {
+	background-image: url("https://img.wallpaper.sc/iphonex/images/1125x2436/iphonex-1125x2436-wallpaper_01694.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
 
 .container {
 	flex: 1;
 	display: flex;
+	height: calc(100vh - 56px);
+	max-width: 100%;
+	max-height: 100%;
+	overflow: auto;
+	padding: 28px;
+}
+
+.flex09 {
+	flex: 0.95
+}
+
+.center {
+	width: 100%;
+	text-align: center;
+}
+
+.header-container {
+	margin-bottom: 2em;
 }
 
 /* Flexbox */
@@ -36,31 +52,36 @@
 	color: #d3d3d3;
 	text-align: center;
 	font-size: 4em;
+	flex: 0.05;
 }
 
 .discover-text {
-	color: #f3f3f3;
+	color: #f0f0f0;
 	font-size: 7em;
+	margin-bottom: 0;
 }
 
 .purple-text {
+	font-weight: bold;
+	margin-bottom: 2em;
 	color: #6F256F;
-	font-size: 2em;
+	font-size: 2.2em;
 }
 
 .small-purple-text {
 	font-weight: bold;
 	color: #6F256F;
-	font-size: 1.5em; 
+	font-size: 1.8em; 
 	margin: 0;
 }
 
 /* Input */
 
 .input-field {
+	position: relative;
 	background-color: rgba(170,170,170, 0.5);
 	border-radius: 10px;
-	padding: 5px;
+	padding: 10px 100px 10px 16px;
 }
 
 .input-field input {
@@ -69,5 +90,24 @@
 	border: none;
 	color: #333;
 	font-size: 3em;
+	padding: 16px 0;
+	outline: none;
+}
+
+.input-arrow {
+	position: absolute;
+	right: 20px;
+	bottom: 1.5em;
+}
+
+.search-button {
+	background: -webkit-linear-gradient(left, rgba(39,108,229,1) 0%,rgba(78,48,244,1) 37%,rgba(118,42,249,1) 71%,rgba(170,43,239,1) 100%);
+	color: #f3f3f3;
+	font-size: 2.5em;
+	text-align: center;
+	padding: 1em 2em;
+	border: none;
+	border-radius: 10px;
+	margin-bottom: 32px;
 }
 
